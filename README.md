@@ -36,8 +36,4 @@ Se você é um desenvolvedor e quer dar uma força nesse projeto, fique à vonta
 
 **[[Link para o seu perfil no GitHub](https://github.com/IsisKaw)]**
 
-**Dica:** Use emojis para deixar seu README mais divertido e fácil de ler. 
 
-**Lembre-se:** O README é a sua vitrine no GitHub. Use-o para mostrar sua paixão pelo projeto e convidar outras pessoas a participarem. 
-
-**Gostou? Quer personalizar ainda mais?** Me diga o que você achou e quais outras informações gostaria de adicionar! 
