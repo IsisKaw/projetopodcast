@@ -1,0 +1,173 @@
+/* styles.css */
+
+/* Importando as fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family/Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family/Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family/Roboto:wght@400&display=swap');
+
+/* Definindo as cores */
+:root {
+  --rosa-pastel: #f28cb1;
+  --roxo-pastel: #b784f2;
+  --verde-pastel: #84f2b7;
+  --azul-pastel: #84b7f2;
+  --laranja-pastel: #f2b784;
+}
+
+/* Estilizando o corpo da página */
+body {
+  font-family: Roboto, sans-serif;
+  text-align: center; /* Centraliza todo o conteúdo */
+  display: flex; /* Usa Flexbox para layout */
+  flex-direction: column; /* Alinha os itens na vertical */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  background-color: #f2f2f2; /* Cor de fundo cinza claro */
+  min-height: 100vh; /* Garante que o corpo tenha pelo menos a altura da viewport */
+}
+
+/* Estilizando o header */
+header {
+  margin-bottom: 20px;
+}
+
+/* Estilizando os títulos */
+h1 {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  color: var(--rosa-pastel);
+}
+h2 {
+  font-family: Montserrat, sans-serif;
+  color: var(--roxo-pastel);
+}
+h3 {
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  color: var(--verde-pastel);
+}
+
+/* Estilizando os parágrafos */
+main p {
+  color: var(--laranja-pastel);
+}
+
+/* Estilizando os links */
+a {
+  color: var(--azul-pastel);
+  text-decoration: none;
+}
+
+/* Estilizando a barra de pesquisa */
+form {
+    display: flex;
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    margin-bottom: 20px;
+  }
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Estiliza os botões dentro das seções */
+button {
+  padding: 10px 20px;
+  background-color: var(--azul-pastel);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; /* Ajuste o valor conforme necessário */
+}
+
+/* Estilizando os itens de resultado */
+.item-resultado {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Ajuste o valor conforme necessário */
+  margin: 0 auto; /* Centraliza a seção */
+  flex-grow: 1; /* Ocupa todo o espaço disponível dentro do container flexbox */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #45474B; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    color: var(--rosa-pastel); /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: static; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-top: auto; /* Afasta o rodapé do conteúdo acima */
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}

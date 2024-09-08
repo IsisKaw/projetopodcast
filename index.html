@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Aprender idiomas com Podcasts</title>
+</head>
+<body>
+    <header>
+        <h1>Aprenda idiomas ouvindo</h1>
+        <h2>Podcasts para quem quer melhorar a fluência</h2>
+    </header>
+    <main>
+        <form id="formPesquisa" onsubmit="return false;">
+            <input type="text" placeholder="Qual idioma você quer aprender hoje?" id="campo-pesquisa">
+            <button type="submit" onclick="pesquisar()">Pesquisar</button>
+        </form>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+      </section>
+    </main>
+    <footer>
+        <p id="rodape-direitos">2024 - Aprender idiomas com Podcasts. Todos os direitos reservados</p>
+        <p id="rodape-contato">Entre em contato pelo e-mail: isiskawana@gmail.com</p>
+    </footer>
+     <script src="dados.js"></script>
+     <script src="app.js"></script>
+</body>
+</html>
